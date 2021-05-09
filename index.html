@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dischi Tizy</title>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="app">
+      <div class="container">
+        <div v-for= "x in arrDischi"  class="card">
+         <h1>
+           {{x.title}}
+         </h1>
+         <img :src="item.poster">
+         <p>
+           {{x.author}}
+         </p>
+         <p>
+           {{x.genre}}
+         </p>
+         <p>
+           {{x.year}}
+         </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="script.js" charset="utf-8"></script>
+
+  </body>
+</html>
